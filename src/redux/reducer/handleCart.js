@@ -1,7 +1,9 @@
 const cart = [];
 
 
-const handleCart = (state = cart, action ) => {
+const handleCart = (state = cart, action) => {
+    console.log('state', state)
+    console.log('action', action)
 
     const product = action.payload;
 
@@ -13,7 +15,7 @@ const handleCart = (state = cart, action ) => {
                 return state.map((x)=>
                 x.id === product.id ? {...x, qty: x.qty + 1} : x);
             }else{
-                const product = action.payload;
+                const product = action.payLoad;
                 return[
                     ...state,
                     {
