@@ -1,8 +1,13 @@
-import React from "react";
+/*import React from "react";
 import { useSelector } from 'react-redux';
+import { useDispatch } from "react-redux";
+import delItem from '../redux/action/index';
 
 const Cart = () => {
+    const state = useSelector((state) => state.addItem)
+    const dispadtch = useDispatch()
     return (
+        <div className="px-4 my-5 bg-light rounded-3">
         <div className="contanier">
             <div className="row">
                 <div className="col-md-4">
@@ -26,7 +31,8 @@ const Cart = () => {
                 </div>
             </div>
         </div>
+        </div>
     )
 }
 
-export default Cart;
+export default Cart;*/
